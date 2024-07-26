@@ -1,20 +1,20 @@
 extends CharacterBody3D
 
 const SENSITIVITY = 0.002
-//  SENSIVITY_CAMERA
+"  SENSIVITY_CAMERA"
 var damage = 10
-//  WEAPON_DAMAGE
+"  WEAPON_DAMAGE"
 const VELOCITY_ACCELERATION = 50.0
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 var gravity = 16.5
-//  Physic configuration
+"  Physic configuration"
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var anim_player = $AnimationPlayer
 @onready var raycast = $Head/Camera3D/RayCast3D
-//  Physical sets
+"  Physical sets"
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -25,7 +25,7 @@ func _unhandled_input(event):
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
   
-//  Camera_motion
+"  Camera_motion"
 
 func _physics_process(delta):
 
@@ -46,7 +46,7 @@ func _physics_process(delta):
 	else:
 		velocity.x = 0.0
 		velocity.z = 0.0
-//  Move and physics function
+"  Move and physics function"
   
 
 func fire():
@@ -59,7 +59,7 @@ func fire():
 		anim_player.play("Fire")
 	else:
 		anim_player.stop()
-// FIRE_WEAPON_FUNCTION
+" FIRE_WEAPON_FUNCTION"
 
 	move_and_slide()
 	
