@@ -10,10 +10,10 @@ const JUMP_VELOCITY = 4.5
 var gravity = 16.5
 "  Physic configuration"
 
-@onready var head = $Head
-@onready var camera = $Head/Camera3D
-@onready var anim_player = $AnimationPlayer
-@onready var raycast = $Head/Camera3D/RayCast3D
+@onready var head = "Your Head"
+@onready var camera = "Your Câmera"
+@onready var anim_player = "Your Animations"
+@onready var raycast = "Your Raycast"
 "  Physical sets"
 
 func _unhandled_input(event):
