@@ -4,6 +4,12 @@
 
 #The camera has the "Head" node as its parent, and the camera as the "RayCast" child.
 
-$Formation:
+$Formation: Create
 Player\Head\Camera\RayCast
             \Camera\Hand\MeshInstance
+
+$Formation_Menu: Create
+Control\MarginContainer\Container\VBoxContainer\Button                        Rename Buttons 3 
+
+$Formation_Menu: Create
+Control\MarginContainer\Container\VBoxContainer\Button                        Rename Buttons 1
