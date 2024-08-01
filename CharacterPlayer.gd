@@ -63,3 +63,11 @@ func fire():
 
 	move_and_slide()
 	
+
+func _input(event):
+	if event.is_action_pressed("back_menu"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		get_tree().change_scene_to_file("res://menu.tscn")
+		
+
+
